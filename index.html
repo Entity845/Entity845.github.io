@@ -6,39 +6,78 @@
     <style>
         
         h1 {
-  color: yellow;
-  background-color:blue;
-  font-family:fantasy;
+            color: yellow;
+            background-color:blue;
+            font-family:fantasy;
   
-}
+        }
 
         h2{
-  color: blue;
-  background-color:yellow;
-    font-family:fantasy;
+            color: blue;
+            background-color:yellow;
+            font-family:fantasy;
   
-}
+        }
         body{
-  background-color:green;
-  color:red;
-  font-family:cursive;
-}
+            background-color:green;
+            color:red;
+            font-family:cursive;
+        }
         #Clarification{
-  text-decoration: underline;
-  font-weight: bold;
-  font-style:italic;
-  font-family:monospace;
-}
-        
+            font-weight: bold;
+            font-style:italic;
+            font-family:monospace;
+            color:black;
+        }
+        #tableContent{
+            width: 100px;
+            height: 250px;
+            position: relative;
+            left: 400px;
+        }
+        .Clarification{
+            width: 350px;
+            height: 250px;
+            position: relative;
+            bottom: 270px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: yellow;
+            border:10px double black;
+            padding:6px;
+        }
+        #addition{
+            height: 450px;
+            position: relative;
+            bottom: 260px;
+        }
+        #subtraction{
+            height: 450px;
+            position: relative;
+            bottom: 260px;
+        }
+        #multiplication{
+            height: 450px;
+            position: relative;
+            bottom: 260px;
+        }
+        #division{
+            height: 480px;
+            position: relative;
+            bottom: 260px;
+        }
+        #ending{
+            height: 10px;
+            position: relative;
+            bottom: 260px;
+        }
     </style>
     </head>
     <body>
     
     <h1 id="start">Basic math in a nutshell</h1>
-      
-    <img src="https://www.luc.edu/media/lucedu/math/images/newsfeaturesandstories/2015/chalk-board-with-math.jpg"
-    width="1480" height="500" alt="Really complicated math. We are not going over this type of math.">
     
+    <div id="tableContent">
     <h2>Table of contents</h2>
     
     <ul>
@@ -47,8 +86,9 @@
         <li><a href="#multiplication">Multiplication</a></li>
         <li><a href="#division">Division</a></li>
     </ul>
-    
-    <h2 ><strong><em>Clarification: Read this!</em></strong></h2>
+    </div>
+    <div class="Clarification">
+    <h2><strong><em>Clarification: Read this!</em></strong></h2>
     <p id="Clarification">When I say this math is easy, I do not mean to offend
     <br> anyone who does not know this math, such as toddlers,
     <br> or infants. I'm just saying that this math is easy for me.
@@ -69,10 +109,12 @@
     <br> offended, infants and toddlers.
     <br>JK be angry I dare you XD
     </p>
-    <h2 id="addition">Addition</h2>
-        <p>Addition is combining numbers together. This is addition:
+    </div>
+    <div id="addition">
+    <h2>Addition</h2>
+        <p>Addition is combining numbers together. This is                addition:
         <br> If I have one candy and you give me 2 candies,
-        <br>how many candies do I have now? The answer is obviously
+        <br>how many candies do I have now? The answer is                 obviously
         <br> 3 candies. Here are some super easy addition problems
         <br>for you to try out.
         </p>
@@ -91,11 +133,12 @@
             <li>0+4</li>
             <li>5+3</li>
         </ul>
-        
-    <h2 id="subtraction">Subtraction</h2>
-        <p>Subtraction is taking part of a number away. This is subtraction:
-        <br>If I have two  candies and I give you one candy, how many candies
-        <br>do I have now? The answer is obviously 1 candy. Here are some
+    </div>
+    <div id="subtraction">    
+    <h2>Subtraction</h2>
+        <p>Subtraction is taking part of a number away. This is           subtraction:
+        <br>If I have two  candies and I give you one candy, how          many candies
+        <br>do I have now? The answer is obviously 1 candy. Here          are some
         <br>easy subtraction problems for you to do.
         </p>
         
@@ -115,12 +158,13 @@
             <li>3-2</li>
             
         </ul>
-        
-    <h2 id="multiplication">Multiplication</h2>
-        <p>Muliplication is repeating addition. For example, If I have 6 dollars,
-        <br>and you triple my money, how much money do I now have? The
-        <br>answer is 18, because 6 tripled is 18. You can view 6 tripled as
-        <br>6 + 6 + 6. Now, you try your hand at multplication problems.
+    </div>
+    <div id="multiplication">    
+    <h2>Multiplication</h2>
+        <p>Muliplication is repeating addition. For example, If I         have 6 dollars,
+        <br>and you triple my money, how much money do I now have?         The
+        <br>answer is 18, because 6 tripled is 18. You can view 6         tripled as
+        <br>6 + 6 + 6. Now, you try your hand at multplication            problems.
         </p>
         
         <ul>
@@ -138,12 +182,13 @@
             <li>8x8</li>
             <li>1x1</li>
         </ul>
-        
-        <h2 id="division">Division</h2>
-            <p>Division is splitting things in groups. For example, if
-            <br>you have 6 candies, and you have to split the candy equally
-            <br>among 3 people, how much candy does each person get? The
-            <br>answer is 2 candies per person. Here are some division
+    </div>
+    <div id="division">
+        <h2>Division</h2>
+            <p>Division is splitting things in groups. For example             , if
+            <br>you have 6 candies, and you have to split the                 candy equally
+            <br>among 3 people, how much candy does each person               get? The
+            <br>answer is 2 candies per person. Here are some                 division
             <br>problems for you to do
             </p>
             
@@ -162,10 +207,12 @@
             <li>17/17</li>
             <li>14/7</li>
         </ul>
+    </div>
+    <div id="ending">
+    <a href="#start">Go back to the beginning</a>
         
-        <a href="#start">Go back to the beginning</a>
-        
-        <h2>This is the End of Basic math in a Nutshell.</h2>
+    <h2>This is the End of Basic math in a Nutshell.</h2>
+    </div>
     </body>
     
 </html>
